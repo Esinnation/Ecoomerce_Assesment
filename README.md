@@ -30,6 +30,7 @@ Building for Production:
 Build your project for production with:
 
 npm run build
+
 This will create an optimized production build in the dist folder. You can then deploy this folder to your web server.
 
 Additional Notes:
