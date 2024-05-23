@@ -5,7 +5,7 @@ const Product = ({item}) => {
   const {photos,name,price,description,id} = item
   const navigate = useNavigate()
   return (
-    <Box width={285} cursor={'pointer'} onClick={()=>navigate(`/${id}`,{state:{item:item }})} >
+    <Box width={285} cursor={'pointer'} onClick={()=>navigate(`/${id}`,{state:{item:item}})} >
       <Image
         boxSize='285px'
         objectFit='cover'

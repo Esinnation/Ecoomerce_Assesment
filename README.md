@@ -15,11 +15,17 @@ npm install
 
 Running the Development Server:
 
+Running the Server:
+
+npx json-server --watch utils/productList.json --port 8000
+
 Start the development server:
 
 npm run dev
 
 This will start the server on http://localhost:5173/ by default. You can access your application in the browser at this URL.
+
+
 
 Hot Module Replacement (HMR):
 

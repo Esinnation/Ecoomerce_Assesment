@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { products } from "../../../utils/productList";
 import { Box } from "@chakra-ui/react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
 import Product from "../Product";
 
-const ProductList = () => {
+const ProductList = ({productList}) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const totalProduct = products.length;
+
+  const totalProduct = productList?.length;
   const pageSize = 10;
   const pages = Math.ceil(totalProduct / pageSize);
 
@@ -22,7 +22,7 @@ const ProductList = () => {
 
   const start = pageSize * (currentPage - 1);
   const end = pageSize * currentPage;
-  const productPerPage = products.slice(start, end);
+  const productPerPage = productList?.slice(start, end);
 
   const canGoPrev = currentPage > 1;
   const canGoNext = currentPage < pages;
@@ -30,7 +30,7 @@ const ProductList = () => {
     <Box>
       <Box display="flex"  flexDirection={'row'} justifyContent={'center'} flexWrap={'wrap'} gridGap={'20px'} gridAutoFlow="row dense">
       {
-        productPerPage.map(item=> <Product key={item.id} item={item} />)
+        productList && productPerPage.map(item=> <Product key={item.id} item={item} />)
       }
       </Box>
       <Box className='flex w-full justify-center items-center mt-20 gap-[12px] md:gap-[24px] '>

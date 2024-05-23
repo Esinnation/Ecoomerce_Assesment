@@ -83,7 +83,10 @@ const Header = () => {
               fontSize={'sm'}
               fontWeight={400}
               variant={'link'}
-              href={'#'}>
+              href={'#'}
+              onClick={()=>alert('Comming Soon')}
+              
+              >
               Sign In
             </Button>
             <Button
@@ -95,7 +98,10 @@ const Header = () => {
               href={'#'}
               _hover={{
                 bg: 'pink.300',
-              }}>
+              }}
+              onClick={()=>alert('Comming Soon')}
+              >
+              
               Sign Up
             </Button>
         </Stack>

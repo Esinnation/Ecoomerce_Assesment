@@ -1,13 +1,16 @@
 import { Box, Button, ButtonGroup, Divider, Icon, Image, Text } from '@chakra-ui/react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import { useEffect, useState } from 'react'
+import { useEffect, useLayoutEffect, useState } from 'react'
 import { products } from '../../utils/productList'
 import { AddIcon, CheckIcon, MinusIcon, SmallAddIcon } from '@chakra-ui/icons'
 import Product from '../components/Product'
 import { useLocation, useNavigate } from 'react-router-dom'
 import Whatsapp from '../assets/whatsapp.svg'
 const ProductDetail = () => {
+  useLayoutEffect(()=>{
+    window.scrollTo(0, 0)
+  },[])
   const [selectedImageIndex, setSelectedImageIndex] = useState(0)
   const randomNumber= Math.floor(Math.random()* 10)
   const location = useLocation();
@@ -74,8 +77,9 @@ const ProductDetail = () => {
               </Box>
             </Box>
             <ButtonGroup   className='flex gap-4 flex-row'>
-              <Button colorScheme='black' borderRadius={0} width={200} variant='outline'>Add to Cart</Button>
-              <Button variant={'solid'} width={200} borderRadius={0} bgColor={'black'} color={'white'}>Buy Now</Button>
+              
+              <Button onClick={()=>alert('Working on ittt')} colorScheme='black' borderRadius={0} width={200} variant='outline' >Add to Cart</Button>
+              <Button variant={'solid'} onClick={()=>alert('Comming Soon')} width={200} borderRadius={0} bgColor={'black'} color={'white'}>Buy Now</Button>
             </ButtonGroup>
             <Box
               onClick={handleWhatsAppClick}
