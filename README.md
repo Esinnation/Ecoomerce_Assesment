@@ -18,6 +18,7 @@ Running the Development Server:
 Start the development server:
 
 npm run dev
+
 This will start the server on http://localhost:3000/ by default. You can access your application in the browser at this URL.
 
 Hot Module Replacement (HMR):
