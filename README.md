@@ -6,7 +6,7 @@ Node.js (version 14.18.0 or above): https://nodejs.org/en/download/package-manag
 Installation:
 
 Clone the repository:
-git clone https://github.com/your-username/your-project-name.git
+git clone https://github.com/Esinnation/Ecoomerce_Assesment.git
 
 Install dependencies:
 Open a terminal in your project directory and run:
@@ -18,7 +18,8 @@ Running the Development Server:
 Start the development server:
 
 npm run dev
-This will start the server on http://localhost:3000/ by default. You can access your application in the browser at this URL.
+
+This will start the server on http://localhost:5173/ by default. You can access your application in the browser at this URL.
 
 Hot Module Replacement (HMR):
 

@@ -33,7 +33,7 @@ const ProductList = () => {
         productPerPage.map(item=> <Product key={item.id} item={item} />)
       }
       </Box>
-      <Box className='flex w-full justify-center items-center gap-[12px] md:gap-[24px] '>
+      <Box className='flex w-full justify-center items-center mt-20 gap-[12px] md:gap-[24px] '>
                   {/* <BsChevronBarLeft /> */}
                   <button disabled={!canGoPrev} onClick={goToPrev} style={{backgroundColor:'transparent',border:'none',cursor:canGoPrev?'pointer':'default', color:canGoPrev ?'#5C29C4':'#CCCCCC'}}>
                     <ChevronLeftIcon boxSize={30}/>
