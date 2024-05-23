@@ -1,22 +1,16 @@
-import { ReactNode } from 'react';
 import {
   Box,
   Flex,
-  Avatar,
   HStack,
   Link,
   IconButton,
   Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
   useDisclosure,
   useColorModeValue,
   Stack,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
+import { useNavigate } from 'react-router-dom';
 
 const Links = ['New Arrivals', 'Trending', 'On Sale'];
 const Logo = (props) => {
@@ -53,7 +47,7 @@ const NavLink = ({ children }) => (
 );
 const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-
+  const navigate =useNavigate()
   return (
     <>
       <Box borderBottom={'1px'} borderBottomColor={'#969696'} bg={'#F4F1D6'} px={4}>
@@ -67,8 +61,8 @@ const Header = () => {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={'center'}>
-          <Box>
-              <Logo color={useColorModeValue('gray.700', 'white')} />
+          <Box cursor={'pointer'} onClick={()=>navigate('/')}>
+              <Logo color={useColorModeValue('gray.700', 'white')}   />
             </Box>
             <HStack
               as={'nav'}

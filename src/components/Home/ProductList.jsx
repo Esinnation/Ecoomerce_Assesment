@@ -28,7 +28,7 @@ const ProductList = () => {
   const canGoNext = currentPage < pages;
   return (
     <Box>
-      <Box display="flex"  flexDirection={'row'} flexWrap={'wrap'} gridGap={'20px'} gridAutoFlow="row dense">
+      <Box display="flex"  flexDirection={'row'} justifyContent={'center'} flexWrap={'wrap'} gridGap={'20px'} gridAutoFlow="row dense">
       {
         productPerPage.map(item=> <Product key={item.id} item={item} />)
       }

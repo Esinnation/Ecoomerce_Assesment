@@ -2,7 +2,7 @@ export const products = [
   {
     "id": 1,
     "name": "Wireless Bluetooth Headphones",
-    "photos": ["https://images.pexels.com/photos/15840650/pexels-photo-15840650/free-photo-of-black-wireless-headphones.jpeg?auto=compress&cs=tinysrgb&w=600", "https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&w=600", "https://images.pexels.com/photos/3394666/pexels-photo-3394666.jpeg?auto=compress&cs=tinysrgb&w=600"],
+    "photos": ["https://images.pexels.com/photos/15840650/pexels-photo-15840650/free-photo-of-black-wireless-headphones.jpeg?auto=compress&cs=tinysrgb&w=600", "https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&w=600", "https://images.pexels.com/photos/15840650/pexels-photo-15840650/free-photo-of-black-wireless-headphones.jpeg?auto=compress&cs=tinysrgb&w=600"],
     "price": 49.99,
     "description": "Enjoy high-quality sound with these wireless Bluetooth headphones. Ergonomically designed for comfort during long listening sessions."
   },
